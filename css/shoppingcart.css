@@ -1,0 +1,426 @@
+/*===========================*/
+/*         기본 CSS          */
+/*===========================*/
+body#cart {
+  background-color: #fcecd9;
+  text-align: center;
+}
+#cart main {
+  font-size: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 550px;
+  margin-top: 70px; /*하연 - 헤더 고정으로 아래로 내림*/
+}
+#cart main > section {
+  width: 1400px;
+  padding-right: 0px;
+  margin-right: 0px;
+  position: relative;
+}
+#cart main > section > section,
+#cart main > aside {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+}
+#cart main > section > section {
+  width: 905px;
+  height: 450px;
+  padding-right: 0;
+  margin-right: 0px;
+  position: absolute;
+  left: 0px;
+}
+#cart main > section > aside {
+  width: 405px;
+  position: absolute;
+  right: 0px;
+}
+section#cart_subtitle {
+  font-size: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+}
+section#cart_suggest {
+  font-size: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 550px;
+}
+
+/*===========================*/
+/*        돌아가기 CSS        */
+/*===========================*/
+article#cart_back {
+  color: #411c0c;
+  font-weight: bold;
+}
+article#cart_back > h1 {
+  float: left;
+  padding-left: 0px;
+  margin-top: 50px;
+  font-size: 25px;
+}
+article#cart_back a {
+  color: #de7141;
+  text-decoration: none;
+  transition: background-color 0.4s;
+  margin-right: 10px;
+  padding: 1px 6px;
+  border-radius: 10px;
+}
+
+article#cart_back a:hover {
+  background-color: #411c0c;
+  border-radius: 10px;
+}
+
+/*===========================*/
+/*        장바구니 CSS        */
+/*===========================*/
+#cart_list {
+  color: #411c0c;
+  background-color: #ffd59f;
+  border: 1px solid #411c0c;
+  border-collapse: collapse;
+  margin-top: 40px;
+  border-radius: 7px;
+  border-style: hidden;
+  box-shadow: 0 0 0 1px #de7141;
+  overflow: hidden;
+  text-align: center;
+  display: inline-block;
+}
+#cart_list img {
+  margin: 15px 15px;
+  border-radius: 7px;
+  border: 1px solid darkgray;
+  overflow: hidden;
+  background-color: white;
+}
+#cart_list th {
+  background-color: #411c0c;
+  padding: 15px 30px;
+  color: white;
+  font-size: 19px;
+}
+#cart_list td {
+  vertical-align: middle;
+  text-align: center;
+}
+#cart_list .cart_product {
+  border-bottom: 1px solid #de7141;
+  padding: 10px 10px 10px 10px;
+  font-size: 18px;
+}
+#cart_list .cart_name {
+  color: #411c0c;
+  text-align: left;
+  width: 280px;
+  padding: 10px 10px 10px 0px;
+}
+#cart_list .cart_name a {
+  color: #411c0c;
+  text-decoration: none;
+}
+#cart_list .cart_name p {
+  font-size: 16px;
+  padding-top: 10px;
+  color: #808080;
+  text-decoration: none;
+}
+#cart_list .cart_price {
+  color: #411c0c;
+  padding: 10px 10px 10px 10px;
+}
+#cart_list .cart_delete {
+  color: #411c0c;
+  padding: 10px 10px 10px 0px;
+  font-size: 25px;
+}
+#cart_list .cart_delete button {
+  transition: background-color 0.4s, color 0.4s;
+  text-align: center;
+  padding: 3px 11px 3px 11px;
+  margin-left: 20px;
+  font-size: 25px;
+  border-radius: 5px;
+  border-style: hidden;
+  background-color: #ffd59f;
+}
+#cart_list .cart_delete button:hover {
+  color: white;
+  background-color: #411c0c;
+  cursor: pointer;
+}
+#cart_list .cart_checkbox input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-left: 25px;
+  margin-right: 15px;
+  accent-color: #de7141;
+}
+#cart_list .cart_checkbox input[type="checkbox"]:hover {
+  cursor: pointer;
+  transform: scale(1.2, 1.2);
+}
+.cart_count,
+.cart_count td {
+  color: #411c0c;
+  border: 1px solid #de7141;
+  border-collapse: collapse;
+}
+.cart_count {
+  border-style: hidden;
+  margin: 30px 35px;
+  display: inline-block;
+  text-align: center;
+  width: 120px;
+  height: 30px;
+  font-size: 0px;
+  border-collapse: collapse;
+  padding: 0px 0px;
+}
+.cart_count > input[type="button"] {
+  border-style: hidden;
+  background-color: #ffd59f;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #de7141;
+  position: relative;
+  z-index: 9;
+  transition: background-color 0.4s, color 0.4s;
+}
+.cart_count > input[type="button"].cart_left {
+  border-radius: 7px 0px 0px 7px;
+}
+.cart_count > input[type="button"].cart_right {
+  border-radius: 0px 7px 7px 0px;
+}
+.cart_count > input[type="button"]:hover {
+  background-color: #de7141;
+  color: white;
+  cursor: pointer;
+}
+.cart_count > input[type="number"] {
+  background-color: #ffd59f;
+  border-top: 1px solid #de7141;
+  border-bottom: 1px solid #de7141;
+  border-left: none;
+  border-right: none;
+  position: relative;
+  width: 50px;
+  height: 26px;
+  z-index: 10;
+  text-align: center;
+}
+.cart_count > input[type="number"]:focus {
+  outline: 2px solid #411c0c;
+  outline-offset: 1px;
+}
+#cart_continue {
+  border: 1px solid #de7141;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #c27e3e;
+  border-radius: 7px;
+  transition: background-color 0.4s, color 0.4s, transform 0.4s;
+  margin-left: 6px;
+  margin-top: 20px;
+  float: left;
+  font-size: 20px;
+}
+#cart_continue:hover {
+  background-color: #de7141;
+  color: white;
+  transform: scale(1.1, 1.1);
+}
+#cart_allclear {
+  background-color: #bd2410;
+  color: #e6e6e6;
+  border: none;
+  padding: 11.5px 16px;
+  text-decoration: none;
+  border-radius: 7px;
+  transition: background-color 0.4s, color 0.4s, transform 0.4s;
+  margin-right: 6px;
+  margin-top: 20px;
+  float: right;
+  font-size: 20px;
+}
+#cart_allclear:hover {
+  background-color: #e9432d;
+  color: white;
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+}
+
+/*===========================*/
+/*      요약 및 결제 CSS      */
+/*===========================*/
+#cart_summary {
+  color: #411c0c;
+  background-color: #ffd59f;
+  border-collapse: collapse;
+  margin-top: 114px;
+  margin-left: 0px;
+  border-radius: 7px;
+  border-style: hidden;
+  box-shadow: 0 0 0 1px #de7141;
+  overflow: hidden;
+  text-align: center;
+  display: inline-block;
+  font-size: 25px;
+  width: 400px;
+}
+#cart_summary th {
+  background-color: #411c0c;
+  font-weight: normal;
+  padding: 15px 10px 15px 20px;
+  width: 400px;
+  color: white;
+  font-size: 24px;
+}
+#cart_summary td {
+  padding: 15px 20px;
+}
+#cart_summary .cart_explain {
+  text-align: left;
+  color: #411c0c;
+  font-weight: bold;
+  font-size: 20px;
+}
+#cart_summary .cart_result {
+  text-align: right;
+  font-size: 20px;
+}
+#cart_summary .cart_explain:first-child {
+  padding-top: 19px;
+}
+#cart_summary #cart_total td {
+  padding-bottom: 23px;
+  font-weight: bold;
+}
+#cart_summary #cart_total td:first-child {
+  text-align: left;
+  font-size: 22px;
+}
+#cart_summary #cart_total td:last-child {
+  text-align: right;
+  font-size: 22px;
+  color: #411c0c;
+  text-shadow: 2px 0px white, 0px 2px white, -2px 0px white, 0px -2px white;
+}
+#cart_summary #cart_payment a {
+  text-align: center;
+  background-color: #de7141;
+  color: white;
+  padding: 10px 144px;
+  border-radius: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background-color 0.4s;
+}
+#cart_summary #cart_payment a:hover {
+  background-color: #a75431;
+  cursor: pointer;
+}
+
+/*===========================*/
+/*        추천 상품 CSS       */
+/*===========================*/
+h1.cart_subtitle {
+  font-size: 30px;
+  font-weight: bold;
+  color: #411c0c;
+  margin-top: 100px;
+}
+h3.cart_subtitle {
+  font-size: 25px;
+  font-weight: normal;
+  color: #c27e3e;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+#cart_suggest a {
+  text-decoration: none;
+}
+#cart_suggest div {
+  width: 300px;
+  height: 300px;
+  font-size: 20px;
+  background-color: white;
+  border: 3px solid #de7141;
+  border-radius: 20px 20px 0px 0px;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+#cart_suggest div:hover {
+  cursor: pointer;
+}
+#cart_suggest div::after {
+  content: "…";
+  font-size: 40px;
+  background-color: #411c0c;
+  padding-left: 130px;
+  padding-right: 130px;
+  padding-top: 60px;
+  padding-bottom: 5px;
+  transition: padding-top 1s;
+  position: absolute;
+  left: -3px;
+  top: 300px;
+  border: 3px solid #de7141;
+  border-top: none;
+  border-radius: 0px 0px 20px 20px;
+}
+#cart_suggest div:hover::after {
+  padding-top: 150px;
+}
+#cart_suggest div#cart_suggest_2 {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#cart_suggest div img {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  border-radius: 20px 20px 0px 0px;
+}
+#cart_suggest div p {
+  position: relative;
+  z-index: 5;
+  font-size: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  opacity: 0;
+  transition: opacity 0.5s, margin-top 0.5s;
+  transition-delay: 0s;
+  color: lightgray;
+}
+#cart_suggest div p.cart_suggest_name {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 1;
+  color: bisque;
+}
+#cart_suggest div p.cart_suggest_price {
+  margin-top: 0px;
+  font-size: 18px;
+  opacity: 1;
+  color: #de7141;
+  margin-top: 10px;
+}
+#cart_suggest div:hover p {
+  opacity: 1;
+  transition-delay: 0.5s;
+  margin-top: 20px;
+}

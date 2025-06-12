@@ -1,0 +1,28 @@
+p {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 70px;
+  padding: 60px;
+}
+.gallery_container {
+  width: 1400px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin: auto; /*중앙 정렬*/
+}
+.gallery_imgbox {
+  width: 200px;
+  text-align: center;
+}
+.gallery_imgbox img {
+  width: 100%;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  opacity: 0.75; /*투명도*/
+  transition: all 0.3s ease; /**/
+}
+.gallery_imgbox img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}

@@ -1,0 +1,63 @@
+.shop_container {
+  margin-top: 130px;
+  width: 100%;
+  margin-bottom: 60px;
+}
+.shop_product_container {
+  display: flex;
+  flex-direction: column; /* ul을 세로 정렬 */
+  gap: 40px; /* ul 사이 간격 */
+}
+.shop_info {
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 60px;
+  font-weight: bold;
+}
+.shop_product_list {
+  display: flex;
+  gap: 20px; /* 항목 간 간격 */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap; /* 줄바꿈 가능하도록 */
+  justify-content: center; /* 내부 아이템 중앙 정렬 */
+}
+.shop_product_items {
+  width: 300px; /* 원하는 너비로 설정 */
+}
+.shop_product {
+  border: 2px solid #411c0c;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.shop_product_img img {
+  width: 100%;
+  background-color: #f8f1e2;
+  border-bottom: 2px solid #411c0c;
+}
+
+.product_name {
+  padding: 10px;
+  margin: 10px 0 20px 5px;
+  font-weight: bold;
+}
+
+.product_price {
+  display: flex; /*price와 pro_cart의 가로정렬*/
+  justify-content: center; /*상하 중앙 정렬*/
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+.product_price p {
+  margin-right: 160px; /*price와 carticon 간격*/
+}
+.product_price img {
+  width: 25px; /*carticon 사이즈*/
+}
+.product_price button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,99 @@
+.qa_container {
+  width: 1400px;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+h3 {
+  margin-top: 70px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  padding: 60px;
+}
+
+.top_list {
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.top_list select,
+.top_list input[type="text"],
+.top_list input[type="submit"] {
+  padding: 7px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.top_list input[type="submit"] {
+  background-color: #411c0c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.top_list input[type="submit"]:hover {
+  background-color: #5c2a13;
+}
+
+/* 검색 바 안의 요소 간격 */
+.top_list ul {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.top_list ul li {
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  margin: 0 auto;
+}
+.table_list {
+  width: 100%;
+}
+.table_list tr {
+  border-top: 1px solid #411c0c;
+  border-bottom: 1px solid #411c0c;
+}
+.table_list td {
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px;
+}
+.pointer {
+  cursor: pointer;
+}
+.table_title {
+  font-weight: bold;
+}
+/* 테이블 헤더 배경색, 글자색 */
+.table_title_tr {
+  background-color: #dbc3a0; /* 연한 라이트 브라운 */
+  color: #4e342e; /* 짙은 브라운 계열 텍스트 */
+  border-top: 1px solid #411c0c;
+  border-bottom: 1px solid #411c0c;
+}
+.button_write {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.button_write button {
+  padding: 8px 15px;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: #411c0c;
+  border-radius: 10px;
+  border: none;
+}
+.button_write button a {
+  text-decoration: none;
+  color: white;
+}

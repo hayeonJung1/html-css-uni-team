@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/shoppingcart.css" />
+    <script src="js/header.js"></script>
+    <title>RETRO SHOP</title>
+  </head>
+  <body id="cart">
+    <header>
+      <div id="header_wrap">
+        <div id="logo_wrap">
+          <a id="logo_link" href="main.html">
+            <img id="logo" src="img/retro_logo.png" alt="로고 이미지" />
+          </a>
+        </div>
+        <nav>
+          <ul id="navi">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="q&a.html">Q&A</a></li>
+          </ul>
+        </nav>
+        <div id="search_wrap">
+          <div id="search">
+            <img id="search_icon" src="img/search_icon.png" alt="" />
+            <input id="search_input" type="text" placeholder="음반 검색..." />
+          </div>
+        </div>
+        <div id="icons">
+          <div id="login">
+            <a id="login_link" href="join.html">
+              <img id="login_img" src="img/user_icon.png" alt="로그인 이미지" />
+            </a>
+          </div>
+          <div id="shoppingcart">
+            <a id="shop_link" href="shoppingcart.html">
+              <img
+                id="shop_img"
+                src="img/cart_icon.png"
+                alt="쇼핑카트 이미지"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--section-->
+    <main>
+      <section>
+        <section>
+          <article id="cart_back">
+            <h1>
+              <a href="main.html" target="_self">←</a>
+              장바구니
+            </h1>
+          </article>
+          <article>
+            <form>
+            <table id="cart_list">
+              <tr>
+                <th colspan="3" style="text-align: left;">상품</th>
+                <th>가격</th>
+                <th>수량</th>
+                <th>합계</th>
+                <th></th>
+              </tr>
+              <tr class="cart_product">
+                  <td class="cart_checkbox"><input type="checkbox"/></td>
+                  <td class="cart_img"><img src="img/product/ghibli/ghibli2.png" width="60" height="60" /></td>
+                  <td class="cart_name">
+                    <a href="product_ghibli.html" title="클릭시 상품페이지로 이동합니다.">
+                      지브리 LP 하울의 움직이는 성
+                      <p>히사이시조</p>
+                    </a>
+                  </td>
+                  <td class="cart_price">₩55,000</td>
+                  <td class="cart_count">
+                    <input type="button" class="cart_left" value="-" />
+                    <input type="number" value="1" min="0" />
+                    <input type="button" class="cart_right" value="+" />
+                  </td>
+                  <td class="cart_price">₩55,000</td>
+                  <td class="cart_delete"><button type="button" onclick="alert('해당 기능은 아직 작동하지 않습니다.')">&#128465;</button></td>
+              </tr>
+              <tr class="cart_product">
+                  <td class="cart_checkbox"><input type="checkbox"/></td>
+                  <td class="cart_img"><img src="img/product/harry/harry1.png" width="60" height="60" /></td>
+                  <td class="cart_name">
+                    <a href="product_harry.html" title="클릭시 상품페이지로 이동합니다.">
+                      해리포터 LP 20주년 기념
+                      <p>박스세트/블랙반</p>
+                    </a>
+                  </td>
+                  <td class="cart_price">₩99,000</td>
+                  <td class="cart_count">
+                    <input type="button" class="cart_left" value="-" />
+                    <input type="number" value="1" min="0" />
+                    <input type="button" class="cart_right" value="+" />
+                  </td>
+                  <td class="cart_price">₩99,000</td>
+                  <td class="cart_delete"><button type="button" onclick="alert('해당 기능은 아직 작동하지 않습니다.')">&#128465;</button></td>
+              </tr>
+              <tr class="cart_product">
+                  <td class="cart_checkbox"><input type="checkbox"/></td>
+                  <td class="cart_img"><img src="img/product/apple/apple1.png" width="60" height="60" /></td>
+                  <td class="cart_name">
+                    <a href="product_apple.html" title="클릭시 상품페이지로 이동합니다.">
+                      디즈니 LP 백설공주 오리지널 재발매
+                      <p>한정판/블랙반</p>
+                    </a>
+                  </td>
+                  <td class="cart_price">₩48,000</td>
+                  <td class="cart_count">
+                    <input type="button" class="cart_left" value="-" />
+                    <input type="number" value="1" min="0" />
+                    <input type="button" class="cart_right" value="+" />
+                  </td>
+                  <td class="cart_price">₩48,000</td>
+                  <td class="cart_delete"><button type="button" onclick="alert('해당 기능은 아직 작동하지 않습니다.')">&#128465;</button></td>
+              </tr>
+            </table>
+          </form>
+          </article>
+          <article>
+            <a href="main.html" target="_self" id="cart_continue">← 쇼핑 계속하기</a>
+            <button type="button" id="cart_allclear" onclick="alert('해당 기능은 아직 작동하지 않습니다.')">&#128465; 장바구니 비우기</button>
+          </article>
+        </section>
+        <aside>
+          <table id="cart_summary">
+            <tr>
+              <th colspan="2" style="text-align: left;">주문 요약</th>
+            </tr>
+            <tr id="cart_count">
+              <td class="cart_explain">상품 수량</td>
+              <td class="cart_result">3 개</td>
+            </tr>
+            <tr id="cart_price">
+              <td class="cart_explain">상품 총 가격</td>
+              <td class="cart_result">₩202,000</td>
+            </tr>
+            <tr id="cart_delivery">
+              <td class="cart_explain">배송비</td>
+              <td class="cart_result">무료</td>
+            </tr>
+            <tr>
+              <td colspan="2"><hr style="margin: 0px; border-bottom: 1px solid #de7141; border-top: none; border-left: none; border-right: none;" /></td>
+            </tr>
+            <tr id="cart_total">
+              <td>최종 결제 금액</td>
+              <td>₩202,000</td>
+            </tr>
+            <tr id="cart_payment">
+              <td colspan="2">
+                <a href="pay.html" target="_self">결제하기</a>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2" style="color: darkgray; text-align: left; font-size: 13px;">&#10071; 안전한 결제를 위해 SSL 암호화를 사용합니다.</td>
+            </tr>
+          </table>
+        </aside>
+      </section>
+    </main>
+    <h1 class="cart_subtitle">추천 상품</h1>
+    <h3 class="cart_subtitle">레트로 감성에 최신 트렌드를 더한 RETRO SHOP의 인기 음반을 만나보세요.</h3>
+    <section id="cart_suggest">
+      <a href="product_miki.html" target="_self" title="클릭시 상품페이지로 이동합니다.">
+        <div id="cart_suggest_1">
+          <img src="img/product/miki/miki1.png" />
+          <p class="cart_suggest_name">디즈니</p>
+          <p class="cart_suggest_price">₩89,000</p>
+          <p>한정판/실버컬러반</p>
+          <p>100주년</p>
+        </div>
+      </a>
+      <a href="product_rosie.html" target="_self" title="클릭시 상품페이지로 이동합니다.">
+        <div id="cart_suggest_2">
+          <img src="img/product/rosie/1.png" /></a>
+          <p class="cart_suggest_name">로제 정규1집</p>
+          <p class="cart_suggest_price">₩48,000</p>
+          <p>핑크컬러반/폴라로이드</p>
+          <p>한정판</p>
+        </div>
+      </a>
+      <a href="product_callme.html" target="_self" title="클릭시 상품페이지로 이동합니다.">
+        <div id="cart_suggest_3">
+          <img src="img/product/callme/1.png" />
+          <p class="cart_suggest_name">콜리바이유어네임</p>
+          <p class="cart_suggest_price">₩56,000</p>
+          <p>핑크컬러반/한정판</p>
+          <p>영화</p>
+        </div>
+      </a>
+    </section>
+    <footer>
+      <div id="footer">
+        <div id="footer_wrap">
+          <div id="footer_main">
+            <div id="footer_zero">
+              <div id="footer_logo_wrap">
+                <a class="box" id="logo_link" href="main.html">
+                  <img id="logo" src="img/retro_logo.png" alt="로고 이미지" />
+                </a>
+              </div>
+              <div id="footer_small_text">
+                <p>소리도, 감성도 아날로그로</p>
+                <p>디지털 시대에 더 빛나는 LP의 감성.</p>
+              </div>
+            </div>
+            <div id="footer_first">
+              <div class="footer_title" id="footer_first_title">쇼핑하기</div>
+              <ul class="footer_ul" id="transition">
+                <li><a href="">음반</a></li>
+                <li><a href="">음원</a></li>
+                <li><a href="">액세서리</a></li>
+                <li><a href="">한정판</a></li>
+                <li><a href="">중고 제품</a></li>
+              </ul>
+            </div>
+            <div id="footer_seconds">
+              <div class="footer_title" id="footer_first_title">고객 지원</div>
+              <ul class="footer_ul" id="transition">
+                <li><a href="">자주 묻는 질문</a></li>
+                <li><a href="">배송 정보</a></li>
+                <li><a href="">반품 및 환불</a></li>
+                <li><a href="">문의하기</a></li>
+                <li><a href="">이용약관</a></li>
+              </ul>
+            </div>
+            <div id="footer_third">
+              <div class="footer_title" id="footer_first_title">연락처</div>
+              <ul class="footer_ul">
+                <li>
+                  <a href="">경기도 부천시 수주로 27-14(고강동) 14409</a>
+                </li>
+                <li><a href="">레트로음반샵 빌딩 2층</a></li>
+                <li><a href="">전화: 02-123-4567</a></li>
+                <li><a href="">이메일: retro@retroshop.kr</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="footer_bottom">
+            <div id="footer_bottom_text">© 2025 RetroShop 판권 소유</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

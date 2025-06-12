@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/product.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="js/header.js"></script>
+    <title>RETRO SHOP</title>
+  </head>
+  <body>
+    <header>
+      <div id="header_wrap">
+        <div id="logo_wrap">
+          <a id="logo_link" href="main.html">
+            <img id="logo" src="img/retro_logo.png" alt="로고 이미지" />
+          </a>
+        </div>
+        <nav>
+          <ul id="navi">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="q&a.html">Q&A</a></li>
+          </ul>
+        </nav>
+        <div id="search_wrap">
+          <div id="search">
+            <img id="search_icon" src="img/search_icon.png" alt="" />
+            <input id="search_input" type="text" placeholder="음반 검색..." />
+          </div>
+        </div>
+        <div id="icons">
+          <div id="login">
+            <a id="login_link" href="join.html">
+              <img id="login_img" src="img/user_icon.png" alt="로그인 이미지" />
+            </a>
+          </div>
+          <div id="shoppingcart">
+            <a id="shop_link" href="shoppingcart.html">
+              <img
+                id="shop_img"
+                src="img/cart_icon.png"
+                alt="쇼핑카트 이미지"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--상품 페이지-->
+    <section>
+      <div class="product_wrap">
+        <div class="product_img">
+          <!--상품 사진들-->
+          <img id="product_main_image" />
+          <!--큰 이미지 (메인)-->
+
+          <div id="small_image_list">
+            <!--이미지는 자바스크립트로 불러옴-->
+          </div>
+        </div>
+        <div>
+          <div class="right">
+            <!--상품 큰 정보들-->
+            <div class="product_tag">
+              <!--상품 태그-->
+              <a href="shop.html">
+                <img
+                  id="return"
+                  class="icon"
+                  src="img/left.png"
+                  alt="돌아가기 이미지"
+                />
+                <p>shop</p>
+              </a>
+            </div>
+
+            <!--상품 이름-->
+            <h1 id="product_name">
+              디즈니 LP 백설공주 오리지널 재발매 (한정판/블랙반)
+            </h1>
+
+            <!--가격-->
+            <p id="price">₩ 48,000</p>
+
+            <!--버튼들-->
+            <div class="product_buttons">
+              <button id="add_to_cart" class="icon_button">
+                <img
+                  class="icon"
+                  src="img/cart_icon.png"
+                  alt="쇼핑카트 이미지"
+                />
+                장바구니에 추가
+              </button>
+
+              <button id="in_heart" class="icon_button">
+                <img
+                  class="icon"
+                  src="img/heart-icon.png"
+                  alt="찜하기 이미지"
+                />
+              </button>
+
+              <button id="product_link" class="icon_button">
+                <img class="icon" src="img/link-icon.png" alt="링크 이미지" />
+              </button>
+            </div>
+
+            <!--조그만 아이콘들-->
+            <div class="small_information_container">
+              <div class="small_information">
+                <!--1-->
+                <img class="small_information_icon" src="img/truk.png" />
+                <div class="small_information_text_group">
+                  <p class="small_information_text">무료 배송</p>
+                  <p class="very_small_information_text">3일 이내 발송</p>
+                </div>
+              </div>
+
+              <div class="small_information">
+                <!--2-->
+                <img class="small_information_icon" src="img/return.png" />
+                <div class="small_information_text_group">
+                  <p class="small_information_text">30일 환불 보증</p>
+                  <p class="very_small_information_text">
+                    마음에 들지 않으면 환불 가능
+                  </p>
+                </div>
+              </div>
+
+              <div class="small_information">
+                <!--3-->
+                <img class="small_information_icon" src="img/sild.png" />
+                <div class="small_information_text_group">
+                  <p class="small_information_text">품질 보증</p>
+                  <p class="very_small_information_text">
+                    전문가가 검수한 제품
+                  </p>
+                </div>
+              </div>
+
+              <div class="small_information">
+                <!--4-->
+                <img class="small_information_icon" src="img/iii.png" />
+                <div class="small_information_text_group">
+                  <p class="small_information_text">전문가 상담</p>
+                  <p class="very_small_information_text">구매 전 문의 가능</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="product_information">
+        <!--상품 상세 정보-->
+        <!--라디오 버튼-->
+        <input type="radio" id="tab1" name="tab" checked />
+        <input type="radio" id="tab2" name="tab" />
+        <input type="radio" id="tab3" name="tab" />
+
+        <!--탭 라벨-->
+        <div class="tab_labels">
+          <label for="tab1" id="label1">상세 정보</label>
+          <label for="tab2" id="label2">상품 후기</label>
+          <label for="tab3" id="label3">반품/교환정보</label>
+        </div>
+
+        <!-- 탭 내용 -->
+        <div class="tab_contents">
+          <div id="content1">
+            <!--탭1 상세정보탭-->
+            <img src="img/product/apple/apple2.jpg" />
+            <br /><br />
+            <p>[국내배송] 디즈니 LP 백설공주 오리지널 재발매 (블랙판)</p>
+            <br />
+            <img src="img/product/apple/apple1.png" />
+          </div>
+
+          <div id="content2">
+            <!--탭2 상품후기탭-->
+            <form>
+              <table>
+                <colgroup>
+                  <col style="width: 5%" />
+                  <col style="width: 65%" />
+                  <col style="width: 10%" />
+                  <col style="width: 10%" />
+                  <col style="width: 109%" />
+                </colgroup>
+                <tr>
+                  <th>번호</th>
+                  <th>제목</th>
+                  <th>작성자</th>
+                  <th>작성일</th>
+                  <th>조회</th>
+                </tr>
+
+                <tr class="review">
+                  <td>1</td>
+                  <td>너무 감동적이에요</td>
+                  <td>유리</td>
+                  <td>2025-03-17</td>
+                  <td>23</td>
+                </tr>
+              </table>
+              <div class="button-container">
+                <input
+                  type="button"
+                  value="후기작성하기"
+                  class="review-button"
+                />
+              </div>
+            </form>
+          </div>
+
+          <div id="content3">
+            <!--탭3 반품/교환정보-->
+            <h2>반품/교환정보</h2>
+            <table class="content3_table">
+              <colgroup>
+                <col style="width: 15%" />
+                <col style="width: 35%" />
+                <col style="width: 15%" />
+                <col style="width: 35%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th colspan="4">반품/교환 안내</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>판매자 지정택배사</th>
+                  <td colspan="3">동양택배</td>
+                </tr>
+                <tr>
+                  <th>반품배송비</th>
+                  <td>편도 3000원</td>
+                  <th>교환배송비</th>
+                  <td>6000원</td>
+                </tr>
+                <tr>
+                  <th>보내실 곳</th>
+                  <td colspan="3">서울 구로구 고척동 62-160</td>
+                </tr>
+                <tr>
+                  <th rowspan="2">반품/교환 사유에 따른 요청 가능 기간</th>
+                  <td colspan="3">구매자 단순 변심은 상품 수령 후 7일 이내</td>
+                </tr>
+                <tr>
+                  <td colspan="3">
+                    표시/광고와 상이, 계약 내용과 다르게 이행된 경우 상품 수령
+                    후 3개월 이내 혹은 표시/광고와 다른 사실을 안 날로부터 30일
+                    이내
+                  </td>
+                </tr>
+                <tr>
+                  <th>반품/교환 불가능 사유</th>
+                  <td colspan="3">
+                    1. 반품요청기간이 지난 경우<br />
+                    2. 구매자의 책임 있는 사유로 상품 등이 멸실 또는 훼손된
+                    경우<br />
+                    3. 구매자의 책임있는 사유로 포장이 웨손되어 상품 가치가
+                    현저히 상실된 경우<br />
+                    4. 구매자의 사용 또는 일부 소비에 의하여 상품의 가치가
+                    현저히 감소한 경우<br />
+                    5. 시간의 경과에 의하여 재판매가 곤란할 정도로 상품 등의
+                    가치가 현저히 감소한 경우<br />
+                    6. 고객의 요청사항에 맞춰 제작에 들어가는 맞춤제작상품의
+                    경우<br />
+                    7. 복제가 가능한 상품 등의 포장을 훼손한 경우
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+            <table class="content3_table">
+              <caption>
+                판매자정보
+              </caption>
+              <colgroup>
+                <col style="width: 15%" />
+                <col style="width: 35%" />
+                <col style="width: 15%" />
+                <col style="width: 35%" />
+              </colgroup>
+              <tr>
+                <th>상호명</th>
+                <td>동양(사업자/개인 사업자)</td>
+                <th>대표자</th>
+                <td>뿅뿅이</td>
+              </tr>
+            </table>
+
+            <div class="content3_table">
+              <h3>주의사항</h3>
+              <ul>
+                <li>
+                  전자상거래 등애서의 소비자보호에 관한 법률에 의한 반품규정이
+                  판매자가 지정한 반품 조건보다 우선합니다.
+                </li>
+                <li>
+                  전자상거래 등애서의 소비자보호에 관한 법률에 의거하여
+                  미성년자가 물품을 구매하는 경우, 법정대리인이 동의하지 않으면
+                  미성년자 본인 또는 법정대리인이 구매를 취소할 수 있습니다.
+                </li>
+                <li>
+                  전기용품 및 생활용품 안전관리법 및 어린이제품 안전 특별법
+                  규정에 의한 안전관리대상 품목인 전기용품, 생활용품,
+                  어린이제품을 판매 또는 구매하실 경우에는 해당 제품이 안전인증,
+                  안전확인, 공급자적합성확인, 안전기준준수 적용 제품인지
+                  확인하시기 바랍니다.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="related_product_container">
+        <!--관련 상품들-->
+        <h2>관련 상품</h2>
+
+        <div class="related_products">
+          <a href="product_miki.html">
+            <div class="related_product">
+              <img
+                class="related_product_img"
+                src="img/product/miki/miki1.png"
+              />
+              <p class="related_product_name">디즈니 100주년</p>
+              <p class="related_product_price">₩ 89,000</p>
+            </div>
+          </a>
+
+          <a href="product_harry.html">
+            <div class="related_product">
+              <img
+                class="related_product_img"
+                src="img/product/harry/harry1.png"
+              />
+              <p class="related_product_name">해리포터</p>
+              <p class="related_product_price">₩ 99,000</p>
+            </div>
+          </a>
+
+          <a href="product_ghibli.html">
+            <div class="related_product">
+              <img
+                class="related_product_img"
+                src="img/product/ghibli/ghibli2.png"
+              />
+              <p class="related_product_name">하울의 움직이는 성</p>
+              <p class="related_product_price">₩ 55,000</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!----------스크립트---------->
+      <script>
+        /*이미지 넣기*/
+        const productImages = ["img/product/apple/apple1.png"];
+
+        //이미지들 가져오기
+        const mainImage = document.getElementById("product_main_image");
+        const smallImages = document.getElementById("small_image_list");
+
+        // 처음 페이지 열렸을 때 큰 이미지를 첫 번째 이미지로 설정
+        mainImage.src = productImages[0];
+
+        //작은 이미지들 만들기
+        productImages.forEach(function (src) {
+          const img = document.createElement("img");
+
+          img.src = src;
+
+          //클래스 넣기
+          img.className = "small_image";
+
+          //이미지 클릭시 이미지 바꾸기
+          img.onclick = function () {
+            mainImage.src = src;
+          };
+
+          smallImages.appendChild(img);
+        });
+      </script>
+    </section>
+
+    <!--준영-->
+    <footer>
+      <div id="footer">
+        <div id="footer_wrap">
+          <div id="footer_main">
+            <div id="footer_zero">
+              <div id="footer_logo_wrap">
+                <a class="box" id="logo_link" href="main.html">
+                  <img id="logo" src="img/footer_logo.png" alt="로고 이미지" />
+                </a>
+              </div>
+              <div id="footer_small_text">
+                <p>소리도, 감성도 아날로그로</p>
+                <p>디지털 시대에 더 빛나는 LP의 감성.</p>
+              </div>
+            </div>
+            <div id="footer_first">
+              <div class="footer_title" id="footer_first_title">쇼핑하기</div>
+              <ul class="footer_ul" id="transition">
+                <li><a href="">음반</a></li>
+                <li><a href="">음원</a></li>
+                <li><a href="">액세서리</a></li>
+                <li><a href="">한정판</a></li>
+                <li><a href="">중고 제품</a></li>
+              </ul>
+            </div>
+            <div id="footer_seconds">
+              <div class="footer_title" id="footer_first_title">고객 지원</div>
+              <ul class="footer_ul" id="transition">
+                <li><a href="">자주 묻는 질문</a></li>
+                <li><a href="">배송 정보</a></li>
+                <li><a href="">반품 및 환불</a></li>
+                <li><a href="">문의하기</a></li>
+                <li><a href="">이용약관</a></li>
+              </ul>
+            </div>
+            <div id="footer_third">
+              <div class="footer_title" id="footer_first_title">연락처</div>
+              <ul class="footer_ul">
+                <li>
+                  <a href="">경기도 부천시 수주로 27-14(고강동) 14409</a>
+                </li>
+                <li><a href="">레트로음반샵 빌딩 2층</a></li>
+                <li><a href="">전화: 02-123-4567</a></li>
+                <li><a href="">이메일: retro@retroshop.kr</a></li>
+              </ul>
+            </div>
+          </div>
+          <div id="footer_bottom">
+            <div id="footer_bottom_text">© 2025 RetroShop 판권 소유</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

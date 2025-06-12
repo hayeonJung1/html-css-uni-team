@@ -1,0 +1,156 @@
+header {
+  width: 100%;
+  height: 70px;
+  background-color: bisque;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  border-bottom: 1px solid #411c0c;
+  justify-content: center;
+  /*header고정을 위한 css*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; /* 다른 요소 위에 표시 */
+}
+
+#header_wrap {
+  width: 1400px;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+
+#logo_wrap {
+  width: 135px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+#logo {
+  width: 135px;
+  height: 45px;
+  background-color: bisque;
+}
+
+#logo_link {
+  width: 135px;
+  height: 45px;
+}
+
+#navi {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  width: 500px;
+  height: 70px;
+  margin-left: 200px;
+}
+
+#navi li a {
+  text-decoration: none;
+  color: #411c0c;
+}
+
+#navi li a:hover {
+  color: #de7141;
+}
+
+#search_wrap {
+  width: 255px;
+  display: flex;
+  align-items: center;
+  margin-left: 165px;
+}
+
+#search {
+  cursor: text;
+  width: 255px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bisque;
+  border: 1px solid #411c0c;
+  border-radius: 30px;
+}
+
+#search.active {
+  border: 1px solid #de7141;
+}
+
+#search_input {
+  width: 200px;
+  border: none;
+  background-color: bisque;
+  outline: none;
+  margin-left: 5px;
+}
+
+#search_icon {
+  width: 20px;
+  height: 20px;
+}
+
+#icons {
+  display: flex;
+  flex-direction: row;
+  width: 95px;
+  align-items: center;
+  margin-left: 50px;
+}
+
+#login {
+  width: 45px;
+  height: 45px;
+}
+
+#login_img {
+  width: 23px;
+  height: 23px;
+}
+
+#login_link {
+  display: inline-block;
+  padding: 10px;
+  width: 23px;
+  height: 23px;
+  transition: background-color 0.4s ease;
+  border-radius: 10px;
+}
+
+#login_link:hover {
+  border-radius: 10px;
+  background-color: #411c0c;
+}
+
+#shoppingcart {
+  width: 45px;
+  height: 45px;
+  margin-left: 5px;
+}
+
+#shop_img {
+  width: 23px;
+  height: 23px;
+}
+
+#shop_link {
+  display: inline-block;
+  padding: 10px;
+  width: 23px;
+  height: 23px;
+  transition: background-color 0.4s ease;
+  border-radius: 10px;
+}
+
+#shop_link:hover {
+  border-radius: 10px;
+  background-color: #411c0c;
+}
